@@ -3,9 +3,16 @@ section {
   flex-direction: column;
   align-items: center;
 }
+
+.map-container {
+height: 50%;
+width: 100%;
+display: flex;
+flex-direction: row;
+}
+
 .g-map {
-  height: 50%;
-  width: 100%;
+  flex: 1;
   border-radius: 10px;
 }
 

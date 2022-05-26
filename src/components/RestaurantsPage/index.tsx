@@ -4,7 +4,7 @@ import './restaurantsPage.css'
 
 export const RestaurantPage: Component = () => {
     const filterURL = `http://localhost:8080/locations/nearby`
-    const radius = 10; // in miles
+    const radius = 10 // in miles
     onMount(() => {
         mapLoader.load().then((google) => {
             const map = new google.maps.Map(
@@ -41,11 +41,15 @@ export const RestaurantPage: Component = () => {
                     map.setZoom(13)
                     marker.setPosition(place.geometry.location)
                     marker.setVisible(true)
-                    fetch(`${filterURL}?lat=${place.geometry.location.lat()}&lng=${place.geometry.location.lng()}&radius=${radius}`)
-                    .then(res => {return res.json()})
-                    .then(data => {
-                        console.log(data);
-                    })
+                    fetch(
+                        `${filterURL}?lat=${place.geometry.location.lat()}&lng=${place.geometry.location.lng()}&radius=${radius}`
+                    )
+                        .then((res) => {
+                            return res.json()
+                        })
+                        .then((data) => {
+                            console.log(data)
+                        })
                 }
             })
         })
@@ -53,7 +57,12 @@ export const RestaurantPage: Component = () => {
     return (
         <section class="mt-7">
             <input class="search-bar" placeholder="Search by address here" />
-            <div class="g-map" id="map"></div>
+            <div class="map-container">
+                <div class="g-map" id="map"></div>
+                <div class="h-full w-2/6 flex-none border-solid border-grey-200 border-2 rounded-xl ml-4 p-4">
+                    <a class="font-bold text-lg">More Info</a>
+                </div>
+            </div>
         </section>
     )
 }
