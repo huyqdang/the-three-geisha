@@ -109,7 +109,12 @@ export const RestaurantPage: Component = () => {
     return (
         <section class="mt-7">
             <input class="search-bar" placeholder="Search by address here" />
-            <div class="g-map" id="map"></div>
+            <div class="map-container">
+                <div class="g-map" id="map"></div>
+                <div class="h-full w-2/6 flex-none border-solid border-grey-200 border-2 rounded-xl ml-4 p-4">
+                    <a class="font-bold text-lg">More Info</a>
+                </div>
+            </div>
         </section>
     )
 }
