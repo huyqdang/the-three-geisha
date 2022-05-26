@@ -3,6 +3,8 @@ import { mapLoader, defaultOption } from '../../utils/map'
 import './restaurantsPage.css'
 
 export const RestaurantPage: Component = () => {
+    const filterURL = `http://localhost:8080/locations/nearby`
+    const radius = 10; // in miles
     onMount(() => {
         mapLoader.load().then((google) => {
             const map = new google.maps.Map(
@@ -39,6 +41,11 @@ export const RestaurantPage: Component = () => {
                     map.setZoom(13)
                     marker.setPosition(place.geometry.location)
                     marker.setVisible(true)
+                    fetch(`${filterURL}?lat=${place.geometry.location.lat()}&lng=${place.geometry.location.lng()}&radius=${radius}`)
+                    .then(res => {return res.json()})
+                    .then(data => {
+                        console.log(data);
+                    })
                 }
             })
         })

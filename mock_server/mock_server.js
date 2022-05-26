@@ -31,6 +31,10 @@ app.get('/locations/nearby', (req, res) => {
         }
         return distance <= radius;
     });
+    result.forEach(location => {
+        location.longitude = location.longitude * (180/pi);
+        location.latitude = location.latitude * (180/pi);
+    });
     return res.json(result);
 });
 
