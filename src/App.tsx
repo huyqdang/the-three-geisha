@@ -1,3 +1,4 @@
+
 import { Component } from 'solid-js'
 import { RestaurantPage } from './components/RestaurantsPage'
 import './index.css'
