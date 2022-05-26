@@ -1,0 +1,19 @@
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.g-map {
+  height: 50%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.search-bar {
+  height: 30px;
+  width: 80%;
+  border: 1px solid gray;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  padding-left: 20px;
+}
