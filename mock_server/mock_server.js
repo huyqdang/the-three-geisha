@@ -35,7 +35,7 @@ app.get('/locations/nearby', (req, res) => {
         if (distance <= radius) {
             console.log(location.app_id)
         }
-        return distance <= radius
+        return distance <= radius || (location.latitude === latRadian && location.longitude === longRadian);
     })
     result.forEach((location) => {
         location.longitude = location.longitude * (180 / pi)
