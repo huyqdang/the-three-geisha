@@ -44,7 +44,7 @@ export const RestaurantPage: Component = () => {
         })
     })
     return (
-        <section>
+        <section class="mt-7">
             <input class="search-bar" placeholder="Search by address here" />
             <div class="g-map" id="map"></div>
         </section>
