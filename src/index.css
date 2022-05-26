@@ -15,3 +15,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+ 
+.app-wrapper {
+  display: grid;
+  grid-template-columns: 220px auto;
+  padding: 20px;
+  min-width: 900px;
+  height: 100vh;
+  gap: 30px;
+}
+
+.side-nav {
+  background: rgb(240,249,248)
+}
