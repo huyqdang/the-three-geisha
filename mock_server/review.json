@@ -1,0 +1,327 @@
+{
+    "nonNull": [
+        {
+            "result": {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": {
+                        "lat": 30.3249853,
+                        "lng": -81.40683150000001
+                    },
+                    "viewport": {
+                        "northeast": {
+                            "lat": 30.32640667989272,
+                            "lng": -81.40551457010727
+                        },
+                        "southwest": {
+                            "lat": 30.32370702010728,
+                            "lng": -81.40821422989272
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+                "icon_background_color": "#FF9E67",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+                "name": "Papa Johns Pizza",
+                "opening_hours": { "open_now": true },
+                "photos": [
+                    {
+                        "height": 720,
+                        "html_attributions": [
+                            "<a href=\"https://maps.google.com/maps/contrib/110724040818353722834\">Papa John&#39;s Pizza</a>"
+                        ],
+                        "photo_reference": "Aap_uEByXEPPesiUe4U0dDds2CZ9zA1FGwKwn5l4k_oz3ITHzrZfvw4-t5dQUpZUBItz9HQ-NeD4WeSzDBMjrbJzSeLcnIsbUV96KVYqKjanByEtI7fj67zPzfqzz5ehF8tf2CPAyxzifSFsUDJLo94_3k2jWRh6CBf0-shGg7BYpas8Plnz",
+                        "width": 720
+                    }
+                ],
+                "place_id": "ChIJvSf59kdJ5IgRtySetS0fKz0",
+                "plus_code": {
+                    "compound_code": "8HFV+X7 Atlantic Beach, Florida",
+                    "global_code": "862W8HFV+X7"
+                },
+                "price_level": 1,
+                "rating": 3,
+                "reference": "ChIJvSf59kdJ5IgRtySetS0fKz0",
+                "scope": "GOOGLE",
+                "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "user_ratings_total": 182,
+                "vicinity": "715 Atlantic Blvd Ste 1, Atlantic Beach"
+            },
+            "app_id": "O9d178d439a"
+        },
+        {
+            "result": {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": { "lat": 42.2446484, "lng": -83.6963415 },
+                    "viewport": {
+                        "northeast": {
+                            "lat": 42.24613672989272,
+                            "lng": -83.69499472010729
+                        },
+                        "southwest": {
+                            "lat": 42.24343707010728,
+                            "lng": -83.69769437989272
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+                "icon_background_color": "#7B9EB0",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+                "name": "George Lopez Tacos",
+                "photos": [
+                    {
+                        "height": 3024,
+                        "html_attributions": [
+                            "<a href=\"https://maps.google.com/maps/contrib/100546140750554793635\">Lauren Salyers</a>"
+                        ],
+                        "photo_reference": "Aap_uECpfs5HjYGnM-bQSb4j0SXCS33IMYBV7_t0nyx5R9sFIx0GbAVOGDTY24Wnh-Lu3_uJKpkHG6nd9KRf8IplpzSdePvqoXSmy9xSxRRtVR540UA1mfFDIG3v7Ul3-32DEJuqjpL0hac2TSOpKlwFAERMEzq0Olt735wF63mgkL7MPxjO",
+                        "width": 4032
+                    }
+                ],
+                "place_id": "ChIJOReOY_6vPIgRyIrkX1E41rM",
+                "plus_code": {
+                    "compound_code": "68V3+VF Ann Arbor, Michigan",
+                    "global_code": "86JR68V3+VF"
+                },
+                "rating": 5,
+                "reference": "ChIJOReOY_6vPIgRyIrkX1E41rM",
+                "scope": "GOOGLE",
+                "types": [
+                    "meal_delivery",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "user_ratings_total": 2,
+                "vicinity": "3182 Packard St, Ann Arbor"
+            },
+            "app_id": "O9t735t013S"
+        },
+        {
+            "result": {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": { "lat": 34.0336517, "lng": -117.0609519 },
+                    "viewport": {
+                        "northeast": {
+                            "lat": 34.03484567989272,
+                            "lng": -117.0594098201073
+                        },
+                        "southwest": {
+                            "lat": 34.03214602010728,
+                            "lng": -117.0621094798927
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+                "icon_background_color": "#FF9E67",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+                "name": "Taco Bell",
+                "opening_hours": { "open_now": true },
+                "photos": [
+                    {
+                        "height": 600,
+                        "html_attributions": [
+                            "<a href=\"https://maps.google.com/maps/contrib/100918107423150579996\">Taco Bell</a>"
+                        ],
+                        "photo_reference": "Aap_uECCjdSVbxjpt3NFLe0JoBg0tb8EjSpZj55GvxQpLjI5UXt6EHRp9WhXZi2Rk2YyG6vjOFB5khDquehB0NbZBf1kuaQiJmYODnjJF2JR-EOlRMzAdxKCtaCYDWhoJyL0B7Oh0OJy5-S6RGY7sCKUlCnh1L7qBPoDS_uW5FyzqOZOS1ss",
+                        "width": 600
+                    }
+                ],
+                "place_id": "ChIJc8iimiNR24ARXX8DHqS0-Pk",
+                "plus_code": {
+                    "compound_code": "2WMQ+FJ Yucaipa, California",
+                    "global_code": "85642WMQ+FJ"
+                },
+                "price_level": 1,
+                "rating": 4,
+                "reference": "ChIJc8iimiNR24ARXX8DHqS0-Pk",
+                "scope": "GOOGLE",
+                "types": [
+                    "meal_takeaway",
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                ],
+                "user_ratings_total": 572,
+                "vicinity": "34077 Yucaipa Blvd, Yucaipa"
+            },
+            "app_id": "OED150D782R"
+        },
+        {
+            "result": {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": { "lat": 35.115953, "lng": -106.6135886 },
+                    "viewport": {
+                        "northeast": {
+                            "lat": 35.11749112989272,
+                            "lng": -106.6122742201073
+                        },
+                        "southwest": {
+                            "lat": 35.11479147010728,
+                            "lng": -106.6149738798927
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+                "icon_background_color": "#FF9E67",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+                "name": "ABQ Burrito & Burger",
+                "opening_hours": { "open_now": false },
+                "photos": [
+                    {
+                        "height": 1600,
+                        "html_attributions": [
+                            "<a href=\"https://maps.google.com/maps/contrib/100621257726265688634\">A Google User</a>"
+                        ],
+                        "photo_reference": "Aap_uECaZhcvDDoh-6S8ZSwmFyEDBCKFJQy71VRxnEBI4Eb7edEu7s71f14xHxsDHJNtnpngCqy98s7FWwmxXV8CThqhZfvPacdq38nTgQbM6-4TiX7JXMPipOtkdTgixjHCvAt3r4iJ7sJdlA_q-cp4pAh12DtN3kQhCUdNl2zxj0aYmdG2",
+                        "width": 2800
+                    }
+                ],
+                "place_id": "ChIJC_nftuV1IocRci2zdRX2fHE",
+                "plus_code": {
+                    "compound_code": "498P+9H Albuquerque, New Mexico",
+                    "global_code": "857M498P+9H"
+                },
+                "price_level": 1,
+                "rating": 4,
+                "reference": "ChIJC_nftuV1IocRci2zdRX2fHE",
+                "scope": "GOOGLE",
+                "types": [
+                    "restaurant",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "user_ratings_total": 191,
+                "vicinity": "2930 Candelaria Rd NE, Albuquerque"
+            },
+            "app_id": "OLE186E968N"
+        },
+        {
+            "result": {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": { "lat": 33.6825244, "lng": -117.6670208 },
+                    "viewport": {
+                        "northeast": {
+                            "lat": 33.68397742989273,
+                            "lng": -117.6657455701073
+                        },
+                        "southwest": {
+                            "lat": 33.68127777010728,
+                            "lng": -117.6684452298928
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+                "icon_background_color": "#7B9EB0",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+                "name": "George Lopez Tacos",
+                "place_id": "ChIJ0c9GM53D3IARUPAzC_TuK-o",
+                "plus_code": {
+                    "compound_code": "M8MM+25 Foothill Ranch, Lake Forest, CA",
+                    "global_code": "8554M8MM+25"
+                },
+                "rating": 3,
+                "reference": "ChIJ0c9GM53D3IARUPAzC_TuK-o",
+                "scope": "GOOGLE",
+                "types": [
+                    "meal_delivery",
+                    "food",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "user_ratings_total": 2,
+                "vicinity": "19232 Alton Pkwy, Foothill Ranch"
+            },
+            "app_id": "ON04010437y"
+        },
+        {
+            "result": {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": { "lat": 34.4129694, "lng": -119.8563987 },
+                    "viewport": {
+                        "northeast": {
+                            "lat": 34.41437152989272,
+                            "lng": -119.8550472701073
+                        },
+                        "southwest": {
+                            "lat": 34.41167187010728,
+                            "lng": -119.8577469298927
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+                "icon_background_color": "#7B9EB0",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+                "name": "George Lopez Tacos",
+                "place_id": "ChIJL_4Jm4k_6YARXvmvAhE0hec",
+                "plus_code": {
+                    "compound_code": "C47V+5C Goleta, California",
+                    "global_code": "8562C47V+5C"
+                },
+                "rating": 3,
+                "reference": "ChIJL_4Jm4k_6YARXvmvAhE0hec",
+                "scope": "GOOGLE",
+                "types": [
+                    "meal_delivery",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                ],
+                "user_ratings_total": 2,
+                "vicinity": "6553 Pardall Rd, Goleta"
+            },
+            "app_id": "OS02110145d"
+        },
+        {
+            "result": {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": { "lat": 39.2012534, "lng": -96.5654256 },
+                    "viewport": {
+                        "northeast": {
+                            "lat": 39.20267467989272,
+                            "lng": -96.56397732010728
+                        },
+                        "southwest": {
+                            "lat": 39.19997502010727,
+                            "lng": -96.56667697989272
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+                "icon_background_color": "#FF9E67",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+                "name": "George Lopez Tacos",
+                "place_id": "ChIJf-1_faDTvYcRcCFDGjo5-Ms",
+                "plus_code": {
+                    "compound_code": "6C2M+FQ Manhattan, Kansas",
+                    "global_code": "86F56C2M+FQ"
+                },
+                "rating": 3,
+                "reference": "ChIJf-1_faDTvYcRcCFDGjo5-Ms",
+                "scope": "GOOGLE",
+                "types": [
+                    "restaurant",
+                    "point_of_interest",
+                    "food",
+                    "establishment"
+                ],
+                "user_ratings_total": 3,
+                "vicinity": "1911 Tuttle Creek Blvd, Manhattan"
+            },
+            "app_id": "OUd105d065v"
+        }
+    ]
+}
