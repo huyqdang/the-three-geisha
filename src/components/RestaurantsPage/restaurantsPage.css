@@ -22,3 +22,17 @@ input:focus {
   outline: none !important;
   border: 3px solid #54C0B0;
 }
+
+.marker-popup-wrapper {
+   max-width: 200px;
+    display: flex;
+    gap: 10px;
+}
+
+.marker-popup-wrapper > img {
+    height: 70px;
+    width: 70px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    padding: 7px;
+}
