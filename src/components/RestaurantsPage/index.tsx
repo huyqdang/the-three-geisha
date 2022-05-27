@@ -8,7 +8,7 @@ const radius = 10 // in miles
 
 const generateLogos = (imgSrcs: any) => {
     const logos = imgSrcs.reduce((acc: any, imgSrc: any) => {
-        return acc + `<img src="${imgSrc}" />`
+        return acc + `<a href="#"><img src="${imgSrc}" onclick="console.log('clicked')"/></a>`
     }, '')
     return '<div class="marker-popup-wrapper">' + logos + '</div>'
 }

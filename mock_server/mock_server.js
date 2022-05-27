@@ -61,7 +61,7 @@ app.get('/generate-reviews/', (req, res) => {
         return location.brand_id === req.query.brand_id && location.available === "available";
     })
     let temp = location_array.map((location => {
-        return axios.get(`https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${location.latitude * (180 / Math.PI)},${location.longitude * (180 / Math.PI)}&name=George%20Lopez%20Tacos&key=yourkey&radius=100`)
+        return axios.get(`https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${location.latitude * (180 / Math.PI)},${location.longitude * (180 / Math.PI)}&name=George%20Lopez%20Tacos&key=${process.env.VITE_APP_GOOGLE_API_KEY}&radius=100`)
         .then(response => {
             if (response.data && response.data.results && response.data.results.length > 0)
                 return {result: response.data.results[0], app_id: location.app_id};

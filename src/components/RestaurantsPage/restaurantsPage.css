@@ -29,7 +29,7 @@ input:focus {
     gap: 10px;
 }
 
-.marker-popup-wrapper > img {
+.marker-popup-wrapper > a > img {
     height: 70px;
     width: 70px;
     border-radius: 5px;
