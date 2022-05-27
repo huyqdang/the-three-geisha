@@ -1,4 +1,4 @@
-import { Component, onMount } from 'solid-js'
+import { Component, createResource, createSignal, onMount } from 'solid-js'
 import { mapLoader, defaultOption } from '../../utils/map'
 import mockBrandData from '../../../mock_server/brand_mapping.json'
 import './restaurantsPage.css'
@@ -106,6 +106,9 @@ export const RestaurantPage: Component = () => {
             })
         })
     })
+
+    console.log('reviews', reviews());
+
     return (
         <section class="mt-7">
             <input class="search-bar" placeholder="Search by address here" />
@@ -113,6 +116,7 @@ export const RestaurantPage: Component = () => {
                 <div class="g-map" id="map"></div>
                 <div class="h-full w-2/6 flex-none border-solid border-grey-200 border-2 rounded-xl ml-4 p-4">
                     <a class="font-bold text-lg">More Info</a>
+                    <pre>{JSON.stringify(reviews(), null, 2)}</pre>
                 </div>
             </div>
         </section>
