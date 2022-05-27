@@ -1,7 +1,17 @@
 import { Component, onMount } from 'solid-js'
 import { mapLoader, defaultOption } from '../../utils/map'
+import mockBrandData from '../../../mock_server/brand_mapping.json'
 import './restaurantsPage.css'
 
+const filterURL = `http://localhost:8080/locations/nearby`
+const radius = 10 // in miles
+
+const generateLogos = (imgSrcs: any) => {
+    const logos = imgSrcs.reduce((acc: any, imgSrc: any) => {
+        return acc + `<img src="${imgSrc}" />`
+    }, '')
+    return '<div class="marker-popup-wrapper">' + logos + '</div>'
+}
 export const RestaurantPage: Component = () => {
     const filterURL = `http://localhost:8080/locations/nearby`
     const radius = 10 // in miles
