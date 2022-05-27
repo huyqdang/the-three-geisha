@@ -2,8 +2,10 @@ const express = require('express')
 const mockData = require('./mock_data.json')
 const brandDetails = require('./brand_mapping.json')
 const cors = require('cors')
+const axios = require('axios');
 
 const app = express()
+const fs = require('fs');
 app.use(cors())
 app.use(express.json())
 
@@ -48,6 +50,41 @@ app.get('/brand-details/:brand_id', (req, res) => {
     const { brand_id } = req.params
     res.json(brandDetails[brand_id])
 })
+
+app.get('/generate-reviews/', (req, res) => {
+    if (!req.query.brand_id) {
+        res.status(400).json({
+            error: 'Invalid query',
+        });
+    }
+    const location_array = mockData.filter((location) => {
+        return location.brand_id === req.query.brand_id && location.available === "available";
+    })
+    let temp = location_array.map((location => {
+        return axios.get(`https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${location.latitude * (180 / Math.PI)},${location.longitude * (180 / Math.PI)}&name=George%20Lopez%20Tacos&key=AIzaSyCOUy84wJnSrwd8dbedLWFLNs_eknz6fCw&radius=100`)
+        .then(response => {
+            if (response.data && response.data.results && response.data.results.length > 0)
+                return {result: response.data.results[0], app_id: location.app_id};
+        })
+    }))
+    Promise.all(temp).then(data => {
+        console.log(data);
+        const nonNull = data.filter(el => el);
+        fs.writeFileSync('./mock_server/review.json', JSON.stringify({nonNull}));
+    });
+});
+
+app.get('/reviews', (req, res) => {
+    console.log(req.query);
+    if (!req.query.app_id) {
+        res.status(400).json({
+            error: 'Invalid query',
+        })
+    }
+
+    const reviews = require('./review.json');
+    res.send(reviews.nonNull.filter(el => el.app_id === req.query.app_id));
+});
 
 app.listen(8080, () => {
     console.log('Server is running on port', 8080)
